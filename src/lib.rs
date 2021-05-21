@@ -1,3 +1,5 @@
+use inline_python::python;
+
 #[cfg(test)]
 mod tests {
     #[test]
