@@ -5,3 +5,4 @@ os:
   - linux
 script:
   - cargo +nightly build --verbose
+  - cargo +nightly test --verbose
