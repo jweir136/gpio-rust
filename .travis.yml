@@ -2,3 +2,5 @@ language: rust
 rust:
   - 1.0.0
   - 1.1.0
+os:
+  - linux
