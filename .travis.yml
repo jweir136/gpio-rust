@@ -5,3 +5,5 @@ rust:
   - nightly
 os:
   - linux
+script:
+  - cargo +nightly build --verbose
