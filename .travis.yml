@@ -2,10 +2,3 @@ language: rust
 rust:
   - 1.0.0
   - 1.1.0
-jobs:
-  fast_finish: true
-cache:
-  cargo
-script:
-  - cargo build --verbose --workspace
-  - cargo test --verbose --workspace
