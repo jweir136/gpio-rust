@@ -24,8 +24,8 @@ mod tests {
     use std::thread;         // for sleep function
 
     #[test]
-    fn is_installed_nonrpi_test() {
-        assert_eq!(is_installed(), false);
+    fn is_installed_test() {
+        assert_eq!(is_installed(), true);
     }
 
     #[test]

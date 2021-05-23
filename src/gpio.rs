@@ -37,7 +37,7 @@ pub fn turn_off(pin: u8) -> Result<(), String> {
             import RPi.GPIO as GPIO
 
             GPIO.setmode(GPIO.BCM)
-            GPIO.setup('pin, GPIO.OUTPUT)
+            GPIO.setup('pin, GPIO.OUT)
             GPIO.output('pin, GPIO.LOW)
 
             success = True
