@@ -56,3 +56,27 @@ pub fn turn_off(pin: u8) -> Result<(), String> {
         Result::Err(msg.to_string())
     }
 }
+
+pub fn cleanup() -> Result<(), String> {
+    let context: Context = python! {
+        try:
+            import RPi.GPIO as GPIO
+
+            GPIO.cleanup()
+
+            success = True
+            msg = ""
+        except Exception as e:
+            msg = str(e)
+            success = False
+    };
+
+    let success: bool = context.get::<bool>("success");
+    let msg: String = context.get::<String>("msg");
+
+    if success {
+        Result::Ok(())
+    } else {
+        Result::Err(msg.to_string())
+    }
+}

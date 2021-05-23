@@ -8,7 +8,6 @@ pub fn is_installed() -> bool {
             was_installed = True
         except Exception as e:
             was_installed = False
-            print(e)
     };
 
     context.get::<bool>("was_installed")
@@ -33,5 +32,18 @@ mod tests {
         gpio::turn_on(18);
         thread::sleep(Duration::from_secs(30));
         gpio::turn_off(18);
+    }
+
+    #[test]
+    fn cleanup_test() {
+        match gpio::cleanup() {
+            Ok(_) => {
+                // holy crap is this stupid...def need to refactor this later on
+                assert_eq!(true, true);
+            },
+            Err(msg) => {
+                assert_eq!(false, true);
+            }
+        };
     }
 }
