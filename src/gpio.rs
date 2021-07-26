@@ -1,10 +1,5 @@
 use inline_python::{ Context, python };
 
-pub enum Power {
-    High,
-    Low
-}
-
 pub fn turn_on(pin: u8) -> Result<(), String> {
     let context: Context = python! {
         try:
