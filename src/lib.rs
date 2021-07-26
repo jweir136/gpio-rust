@@ -1,6 +1,13 @@
 use inline_python::{ python, Context };
 
-
+/// Returns a boolean value to indicate if the correct Raspberry PI GPIO libraries have been installed.
+/// This crate will not work is the libraries are not installed. The libraries do not come with this crate
+/// and need to be installed separately.
+///
+/// Here is an example:
+/// ```
+/// assert!(is_installed());
+/// ```
 pub fn is_installed() -> bool {
     let context: Context = python! {
         try:
@@ -13,6 +20,7 @@ pub fn is_installed() -> bool {
     context.get::<bool>("was_installed")
 }
 
+/// Contains all the basic, low-level functions used to control the Raspberry PI's GPIO pins.
 pub mod gpio;
 
 #[cfg(test)]
