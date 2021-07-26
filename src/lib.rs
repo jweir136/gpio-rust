@@ -28,6 +28,7 @@ mod tests {
     }
 
     #[test]
+    #[cfg(target_os="linux")]
     fn basic_on_off_test() {
         gpio::turn_on(18);
         thread::sleep(Duration::from_secs(30));
@@ -35,6 +36,7 @@ mod tests {
     }
 
     #[test]
+    #[cfg(target_os="linux")]
     fn cleanup_test() {
         match gpio::cleanup() {
             Ok(_) => {
