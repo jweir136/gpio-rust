@@ -4,6 +4,9 @@ use inline_python::{ python, Context };
 /// This crate will not work is the libraries are not installed. The libraries do not come with this crate
 /// and need to be installed separately.
 ///
+/// To install on your Raspberry PI, run:
+/// ```sudo apt-get update && sudo apt-get install rpi.gpio```
+///
 /// Here is an example:
 /// ```
 /// assert!(is_installed());
