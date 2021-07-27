@@ -11,7 +11,7 @@ install the correct GPIO library on your Raspberry PI. Under the hood, Rust GPIO
 [RPi.GPIO](https://pypi.org/project/RPi.GPIO/). Luckily, the library comes pre-installed
 in most Raspbian/Raspberry Pi OS operating systems. If you find yourself needing to download or
 update the RPi.GPIO library you can run ```sudo apt-get update && sudo apt-get install python-rpi.gpio python3-rpi.gpi```. If you are unsure if the library is already installed, you install this crate and call the ```is_installed()``` method. The Rust GPIO crate can be installed to a project
-by adding ```gpio-rust = "0.1.3"``` to your Cargo.toml file.
+by adding ```gpio-rust = "*"``` to your Cargo.toml file.
 
 ## Usage
 
@@ -48,4 +48,4 @@ match cleanup() {
 
 ## Documentation
 
-The Rust GPIO crate is very self-explanatory. However, if you find yourself in the need of some documentation, and there is a good change you will, you can access it at [Docs.rs | Rust GPIO](https://docs.rs/gpio-rust/0.1.3/gpio_rust/). You can also download the crate from source and build the docs using ```cargo doc --no-deps --open```.
+The Rust GPIO crate is very self-explanatory. However, if you find yourself in the need of some documentation, and there is a good change you will, you can access it at [Docs.rs | Rust GPIO](https://docs.rs/gpio-rust/0.1.2/gpio_rust/). You can also download the crate from source and build the docs using ```cargo doc --no-deps --open```.
