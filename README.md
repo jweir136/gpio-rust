@@ -1,6 +1,6 @@
 # Rust GPIO
 
-![Travis CI Badge | Build](https://www.travis-ci.com/jweir136/gpio-rust.svg?branch=master) [![https://img.shields.io/badge/docs.rs-rustdoc-green]][https://docs.rs/mycrate/]
+![Travis CI Badge | Build](https://www.travis-ci.com/jweir136/gpio-rust.svg?branch=master) [![Docs badge]][docs.rs]
 
 Rust GPIO is a low-level library used to interact with a Raspberry PI's GPIO pins.
 
@@ -49,3 +49,6 @@ match cleanup() {
 ## Documentation
 
 The Rust GPIO crate is very self-explanatory. However, if you find yourself in the need of some documentation, and there is a good change you will, you can access it at [Docs.rs | Rust GPIO](https://docs.rs/gpio-rust/0.1.2/gpio_rust/). You can also download the crate from source and build the docs using ```cargo doc --no-deps --open```.
+
+[Docs badge]: https://img.shields.io/badge/docs.rs-rustdoc-green
+[docs.rs]: https://docs.rs/mycrate/
