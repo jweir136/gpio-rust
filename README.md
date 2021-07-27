@@ -8,7 +8,7 @@ Rust GPIO is a low-level library used to interact with a Raspberry PI's GPIO pin
 
 In order to use Rust GPIO you not only need to install this crate to your project, but to
 install the correct GPIO library on your Raspberry PI. Under the hood, Rust GPIO uses 
-![RPi.GPIO](https://pypi.org/project/RPi.GPIO/). Luckily, the library comes pre-installed
+[RPi.GPIO](https://pypi.org/project/RPi.GPIO/). Luckily, the library comes pre-installed
 in most Raspbian/Raspberry Pi OS operating systems. If you find yourself needing to download or
 update the RPi.GPIO library you can run ```sudo apt-get update && sudo apt-get install python-rpi.gpio python3-rpi.gpi```. If you are unsure if the library is already installed, you install this crate and call the ```is_installed()``` method. The Rust GPIO crate can be installed to a project
 by adding ```gpio-rust = "0.1.0"``` to your Cargo.toml file.
