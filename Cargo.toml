@@ -1,6 +1,6 @@
 [package]
 name = "gpio-rust"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["jacobweir"]
 edition = "2018"
 description = "Rust GPIO is a low-level library used to interact with a Raspberry PI's GPIO pins."
