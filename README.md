@@ -1,6 +1,6 @@
 # Rust GPIO
 
-![Travis CI Badge | Build](https://www.travis-ci.com/jweir136/gpio-rust.svg?branch=master)
+![Travis CI Badge | Build](https://www.travis-ci.com/jweir136/gpio-rust.svg?branch=master) [![https://img.shields.io/badge/docs.rs-rustdoc-green]][https://docs.rs/mycrate/]
 
 Rust GPIO is a low-level library used to interact with a Raspberry PI's GPIO pins.
 
