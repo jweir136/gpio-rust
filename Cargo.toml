@@ -3,6 +3,13 @@ name = "gpio-rust"
 version = "0.1.0"
 authors = ["jacobweir"]
 edition = "2018"
+description = "Rust GPIO is a low-level library used to interact with a Raspberry PI's GPIO pins."
+readme = "README.md"
+repository = "https://github.com/jweir136/gpio-rust"
+license = "apache-2.0"
+license_file = "License.txt"
+homepage = "https://github.com/jweir136/gpio-rust"
+keywords = ["gpio", "raspberry-pi", "pi", "rpi"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
